@@ -20,7 +20,7 @@
   html{scroll-behavior:smooth;}
   @media (prefers-reduced-motion: reduce){
     html{scroll-behavior:auto;}
-    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+    
   }
 
   body{
@@ -64,23 +64,8 @@
   em{font-style:italic; font-weight:400; color:var(--redline);}
   .on-dark em{color:var(--cyanline);}
 
-  /* corner register marks — recurring drafting motif */
-  .register{
-    position:absolute;
-    width:16px; height:16px;
-    top:28px; left:28px;
-    opacity:0.55;
-    pointer-events:none;
-  }
-  .register::before,.register::after{
-    content:"";
-    position:absolute;
-    background:currentColor;
-  }
-  .register::before{width:16px; height:1px; top:7.5px; left:0;}
-  .register::after{width:1px; height:16px; top:0; left:7.5px;}
-  .on-dark .register{color:var(--cyanline);}
-  .on-light .register{color:var(--redline);}
+  
+  
 
   /* ---------- NAV ---------- */
   .nav{
