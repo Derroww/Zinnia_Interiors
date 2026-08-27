@@ -134,7 +134,7 @@ Tested and designed for:
 
 **Zinnia Interiors**
 
-A modern interior design portfolio and business showcase built with HTML, CSS, and JavaScript.
+A modern interior design portfolio and business showcase built with HTML, CSS.
 
 ## License
 
