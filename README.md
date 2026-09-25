@@ -9,37 +9,46 @@ Zinnia Interiors is a premium interior design showcase website designed to prese
 ## Features
 
 ### Responsive Navigation
+
 - Sticky navigation bar
 - Mobile-friendly menu toggle
 - Smooth scrolling between sections
 - Accessible navigation controls
 
 ### Hero Section
+
 - Strong brand messaging
 - Architectural floor-plan illustration
 - Clear call-to-action buttons
 - Responsive layout adaptation
 
 ### Studio Introduction
+
 - Company philosophy and design approach
 - Founder and studio information
 - Elegant typography presentation
 
 ### Services Section
+
 Three core service offerings:
+
 1. Full-Service Design
 2. Renovation Planning
 3. Furnishing & Styling
 
 ### Design Process
+
 A four-phase workflow:
+
 1. Discovery
 2. Concept & Drawings
 3. Sourcing & Specification
 4. Installation
 
 ### Portfolio Showcase
+
 Featured projects including:
+
 - Brooklyn Loft Renovation
 - Hudson Farmhouse
 - Tribeca Pied-à-terre
@@ -47,9 +56,11 @@ Featured projects including:
 - West Village Townhouse
 
 ### Testimonials
+
 Client feedback section highlighting successful projects and customer experiences.
 
 ### Contact Form
+
 - Project inquiry form
 - Project type selection
 - Client contact information
@@ -58,11 +69,13 @@ Client feedback section highlighting successful projects and customer experience
 ## Technologies Used
 
 ### Frontend
+
 - HTML5
 - CSS3
-- Vanilla JavaScript
+- JavaScript
 
 ### Design Elements
+
 - CSS Variables for theme management
 - CSS Grid Layout
 - Flexbox
@@ -70,20 +83,21 @@ Client feedback section highlighting successful projects and customer experience
 - Custom Typography
 
 ### Fonts
+
 - Fraunces (Display Font)
 - Inter (Body Font)
 - IBM Plex Mono (Monospace Font)
 
 ## Color Palette
 
-| Color | Purpose |
-|---------|---------|
-| Blueprint Blue | Primary brand color |
+| Color          | Purpose                  |
+| -------------- | ------------------------ |
+| Blueprint Blue | Primary brand color      |
 | Deep Blueprint | Footer and dark sections |
-| Paper | Background color |
-| Redline | Accent highlights |
-| Cyanline | Secondary accent |
-| Brass | Decorative details |
+| Paper          | Background color         |
+| Redline        | Accent highlights        |
+| Cyanline       | Secondary accent         |
+| Brass          | Decorative details       |
 
 ## Project Structure
 
@@ -95,7 +109,6 @@ Zinnia Interiors/
 style.css
 ```
 
-
 ## Accessibility Features
 
 - Semantic HTML structure
@@ -105,6 +118,7 @@ style.css
 ## Design Philosophy
 
 The website reflects the studio's belief that great interior design begins with planning and architectural thinking. The visual language incorporates:
+
 - Blueprint-inspired layouts
 - Drafting references
 - Technical drawing motifs
@@ -116,7 +130,6 @@ The website reflects the studio's belief that great interior design begins with 
 - Backend integration for contact form submissions
 - CMS integration for project management
 - Project gallery image uploads
-- Blog or journal section
 - Appointment booking functionality
 - Social media integration
 - Dark mode support
@@ -124,6 +137,7 @@ The website reflects the studio's belief that great interior design begins with 
 ## Browser Compatibility
 
 Tested and designed for:
+
 - Google Chrome
 - Mozilla Firefox
 - Microsoft Edge
@@ -137,4 +151,3 @@ Tested and designed for:
 A modern interior design portfolio and business showcase built with HTML, CSS.
 
 ## License
-
