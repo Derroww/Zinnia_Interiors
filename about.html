@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zinnia Interiors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav__inner">
+        <a class="nav__mark" href="index.html">Zinnia<span>Interiors</span></a>
+        <input
+          type="checkbox"
+          id="navToggle"
+          class="nav__toggle-checkbox"
+          aria-hidden="true"
+        />
+        <label for="navToggle" class="nav__toggle" aria-label="Toggle menu"
+          ><span></span
+        ></label>
+
+        <ul class="nav__links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="studio.html">Studio</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section id="about-intro" class="intro on-light">
+        <div class="wrap">
+          <p class="eyebrow">Our Philosophy</p>
+          <h2>We take on eight residential projects a year, start to finish, and hand you a full set of drawings before a single thing is bought.</h2>
+          <p class="byline">Founded in Nairobi — Operating across Nairobi County and its environs</p>
+        </div>
+      </section>
+
+      
+      <section id="about-details" class="studio on-light" style="padding-top: 0;">
+        <div class="studio__inner">
+          <div class="studio__content">
+            <h3>Structure first, warmth after.</h3>
+            <p>
+              At Zinnia Interiors, we approach interior architecture with a meticulous focus on technical design variables. We don't believe in immediate decoration. Instead, every structural blueprint, partition detail, elevation line, and electrical asset schematic is completely locked in place before a single piece of fabric or item of loose furniture is ordered.
+            </p>
+            <p>
+              By intentionally limiting our scope of operation to a tight roster of client handovers per year, our studio provides hyper-focused contract administration, site management, and styling overlays. This ensures that what is signed off on paper is exactly what gets built inside your home.
+            </p>
+            <div style="margin-top: 32px;">
+              <a class="btn btn--fill" href="process.html" style="background-color: var(--blueprint);">Explore Our Process</a>
+            </div>
+          </div>
+          <div class="studio__image">
+            <img src="./Images/Living-room.jpg" alt="Image of a well designed living room" />
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer class="footer on-dark">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a class="footer__mark" href="index.html">Zinnia<span>Interiors</span></a>
+          <p>Residential interior design for deliberate spaces.</p>
+        </div>
+        <div class="footer__grid">
+          <div class="footer__col">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="studio.html">Studio</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="process.html">Process</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="shop.html">Shop</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Inquiries</h4>
+            <ul>
+              <li><a href="contact.html">Start a Project</a></li>
+              <li><p>studio@zinnia.co.ke</p></li>
+              <li><p>Kilimani, Nairobi</p></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2026 Zinnia Interiors. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

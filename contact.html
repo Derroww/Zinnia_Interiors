@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Start a Project — Zinnia Interiors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav__inner">
+        <a class="nav__mark" href="index.html">Zinnia<span>Interiors</span></a>
+        <input
+          type="checkbox"
+          id="navToggle"
+          class="nav__toggle-checkbox"
+          aria-hidden="true"
+        />
+        <label for="navToggle" class="nav__toggle" aria-label="Toggle menu"
+          ><span></span
+        ></label>
+
+        <ul class="nav__links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="studio.html">Studio</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section id="contact" class="contact on-light">
+        <div class="register"></div>
+        <div class="contact__inner">
+          <div class="contact__head">
+            <p class="eyebrow">Start a Project</p>
+            <h2>Let’s draw something substantial together.</h2>
+          </div>
+
+          <!-- Form wrapper matches the script event selector targets -->
+          <form class="contact__form" action="#" method="POST">
+            <div class="form__group">
+              <label for="clientName">Your Name</label>
+              <input
+                type="text"
+                id="clientName"
+                name="name"
+                required
+                placeholder="e.g. Wanjiku Kamau"
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="clientEmail">Email Address</label>
+              <input
+                type="email"
+                id="clientEmail"
+                name="email"
+                required
+                placeholder="name@domain.com"
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="projectLocation">Project Location</label>
+              <input
+                type="text"
+                id="projectLocation"
+                name="location"
+                required
+                placeholder="e.g. Kilimani, Lavington, Runda"
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="projectScope">Scope of Work</label>
+              <select id="projectScope" name="scope">
+                <option value="full-service">
+                  Full-Service Design &amp; Renovation
+                </option>
+                <option value="furnishing">
+                  Furnishing &amp; Styling Only
+                </option>
+                <option value="planning">
+                  Space Planning &amp; Layout Drawings
+                </option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label for="projectDetails"
+                >Tell us about the rooms we are planning</label
+              >
+              <textarea
+                id="projectDetails"
+                name="details"
+                rows="5"
+                placeholder="What parts of the space aren't working for you right now?"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--fill">
+              Submit Project Brief
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer on-dark">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a class="footer__mark" href="index.html"
+            >Zinnia<span>Interiors</span></a
+          >
+          <p>Residential interior design for deliberate spaces.</p>
+        </div>
+        <div class="footer__grid">
+          <div class="footer__col">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="studio.html">Studio</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="process.html">Process</a></li>
+              <li><a href="shop.html">Shop</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Inquiries</h4>
+            <ul>
+              <li><a href="contact.html">Start a Project</a></li>
+              <li><p>studio@zinnia.co.ke</p></li>
+              <li><p>Kilimani, Nairobi</p></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2026 Zinnia Interiors. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

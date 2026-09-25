@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selected Work — Zinnia Interiors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav__inner">
+        <a class="nav__mark" href="index.html">Zinnia<span>Interiors</span></a>
+        <input
+          type="checkbox"
+          id="navToggle"
+          class="nav__toggle-checkbox"
+          aria-hidden="true"
+        />
+        <label for="navToggle" class="nav__toggle" aria-label="Toggle menu"
+          ><span></span
+        ></label>
+
+        <ul class="nav__links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="studio.html">Studio</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      
+      <section id="portfolio-showroom" class="work on-light">
+        <div class="work__head">
+          <div>
+            <p class="eyebrow">Selected Projects</p>
+            <h2>A few rooms we've drawn, then built.</h2>
+          </div>
+        </div>
+
+        <div class="work__grid">
+          
+          <article class="project" data-project="hurlingham">
+            <div class="project__plate">
+              <span
+                ><img src="./Images/loft.jpg" alt="Hurlingham Loft Renovation"
+              /></span>
+            </div>
+            <div class="project__body">
+              <h3>Hurlingham Loft Renovation</h3>
+            </div>
+          </article>
+
+          <!-- Project Card 02 -->
+          <article class="project" data-project="embakasi">
+            <div class="project__plate">
+              <span
+                ><img src="./Images/farmhouse.jpg" alt="Embakasi Farmhouse"
+              /></span>
+            </div>
+            <div class="project__body">
+              <h3>Embakasi Farmhouse</h3>
+            </div>
+          </article>
+
+          <!-- Project Card 03 -->
+          <article class="project" data-project="lavington">
+            <div class="project__plate">
+              <span
+                ><img
+                  src="./Images/Tribeca Pied-à-terre.jpg"
+                  alt="Lavington Residence"
+              /></span>
+            </div>
+            <div class="project__body">
+              <h3>Lavington Pied-à-terre</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <div id="projectModal" class="modal" aria-hidden="true" role="dialog">
+      <button class="modal__close" aria-label="Close modal">&times;</button>
+      <div class="modal__content">
+        <div class="modal__view">
+          <img id="modalImage" src="" alt="View window" />
+        </div>
+        <div class="modal__meta">
+          <h3 id="modalTitle">Title</h3>
+          <p id="modalDesc">Description</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer on-dark">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a class="footer__mark" href="index.html"
+            >Zinnia<span>Interiors</span></a
+          >
+          <p>Residential interior design for deliberate spaces.</p>
+        </div>
+        <div class="footer__grid">
+          <div class="footer__col">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="studio.html">Studio</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="process.html">Process</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="shop.html">Shop</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Inquiries</h4>
+            <ul>
+              <li><a href="contact.html">Start a Project</a></li>
+              <li><p>studio@zinnia.co.ke</p></li>
+              <li><p>Kilimani, Nairobi</p></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2026 Zinnia Interiors. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Studio — Zinnia Interiors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav__inner">
+        <a class="nav__mark" href="index.html">Zinnia<span>Interiors</span></a>
+        <input
+          type="checkbox"
+          id="navToggle"
+          class="nav__toggle-checkbox"
+          aria-hidden="true"
+        />
+        <label for="navToggle" class="nav__toggle" aria-label="Toggle menu"
+          ><span></span
+        ></label>
+
+        <ul class="nav__links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="studio.html" class="active">Studio</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section id="studio" class="studio on-light">
+        <div class="register"></div>
+        <div class="studio__inner">
+          <div class="studio__content">
+            <p class="eyebrow">The Studio</p>
+            <h2>True lines first, warmth after.</h2>
+            <p>
+              Founded in Nairobi, Zinnia Interiors approaches residential spaces
+              with architectural discipline. We believe structural clarity must
+              precede decoration. By limiting our workflow to eight major
+              residential handovers per year, we ensure total design integrity
+              from the first draft to final handover styling.
+            </p>
+            <p>
+              Our Kilimani studio houses our design team, material library, and
+              client review boards. It is here that every layout variant is
+              tested, line by line, before construction begins.
+            </p>
+          </div>
+          <div class="studio__image">
+            <img
+              src="./Images/Studio-workspace.jpg"
+              alt="Zinnia Interiors design studio workspace in Kilimani"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer on-dark">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a class="footer__mark" href="index.html"
+            >Zinnia<span>Interiors</span></a
+          >
+          <p>Residential interior design for deliberate spaces.</p>
+        </div>
+        <div class="footer__grid">
+          <div class="footer__col">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="studio.html">Studio</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="process.html">Process</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="shop.html">Shop</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Inquiries</h4>
+            <ul>
+              <li><a href="contact.html">Start a Project</a></li>
+              <li><p>studio@zinnia.co.ke</p></li>
+              <li><p>Kilimani, Nairobi</p></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2026 Zinnia Interiors. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

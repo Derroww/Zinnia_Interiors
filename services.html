@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services — Zinnia Interiors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav__inner">
+        <a class="nav__mark" href="index.html">Zinnia<span>Interiors</span></a>
+        <input
+          type="checkbox"
+          id="navToggle"
+          class="nav__toggle-checkbox"
+          aria-hidden="true"
+        />
+        <label for="navToggle" class="nav__toggle" aria-label="Toggle menu"
+          ><span></span
+        ></label>
+
+        <ul class="nav__links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="studio.html">Studio</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section id="services" class="services on-light">
+        <div class="services__head">
+          <p class="eyebrow">What We Do</p>
+          <h2>Comprehensive spatial design, down to the last line.</h2>
+        </div>
+
+        <div class="services__grid">
+          <div class="service">
+            <span class="service__num">01</span>
+            <h3>Full-Service Design</h3>
+            <p>
+              Complete room and whole-house transformations planned meticulously
+              from structural adjustments to final placement.
+            </p>
+            <ul>
+              <li>Spatial planning & elevations</li>
+              <li>Material & finish specifications</li>
+              <li>On-site design coordination</li>
+            </ul>
+          </div>
+
+          <div class="service">
+            <span class="service__num">02</span>
+            <h3>Space Planning</h3>
+            <p>
+              Detailed floor plans and architectural layout configurations
+              engineered to optimize daily utility and room circulation.
+            </p>
+            <ul>
+              <li>Measured structural surveys</li>
+              <li>Furniture layout variants</li>
+              <li>Demolition & partition documentation</li>
+            </ul>
+          </div>
+
+          <div class="service">
+            <span class="service__num">03</span>
+            <h3>Furnishing &amp; Styling</h3>
+            <p>
+              Curated loose-furniture packages, textile pairings, lighting
+              overlays, and artwork styling for established rooms.
+            </p>
+            <ul>
+              <li>Custom furniture sourcing</li>
+              <li>Fabric & window treatments</li>
+              <li>Single-day installation & reveal</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+       <!-- Portfolio Grid Section -->
+      <section class="work on-light">
+        <div class="work__head">
+          <div>
+            <p class="eyebrow">Selected Works</p>
+            <h2>Residential Portfolio</h2>
+          </div>
+        </div>
+
+        <!-- 3-Column Portfolio Grid Matching Image Grid Structure -->
+        <div class="work__grid work__grid--gallery">
+          
+          <!-- Card 01: Nusa Stillness -->
+          <article class="project project--gallery" data-project="nusa">
+            <div class="project__plate">
+              <img src="./Images/Nusa-stillness.png" alt="Nusa Stillness Interior space" />
+            </div>
+            <div class="project__body">
+              <h3>Nusa Stillness</h3>
+            </div>
+          </article>
+
+          <!-- Card 02: Liminal Axis -->
+          <article class="project project--gallery" data-project="liminal">
+            <div class="project__plate">
+              <img src="./Images/Liminal-axis.png" alt="Liminal Axis dynamic open layout" />
+            </div>
+            <div class="project__body">
+              <h3>Liminal Axis</h3>
+            </div>
+          </article>
+
+          <!-- Card 03: Ochre Retreat -->
+          <article class="project project--gallery" data-project="ochre">
+            <div class="project__plate">
+              <img src="./Images/Ochre-retreat.png" alt="Ochre Retreat screening panels design" />
+            </div>
+            <div class="project__body">
+              <h3>Ochre Retreat</h3>
+            </div>
+          </article>
+
+          
+
+        </div>
+      </section>
+    </main>
+
+    <!-- INTERACTIVE DYNAMIC MODAL CONTAINER -->
+    <div id="projectModal" class="modal" aria-hidden="true" role="dialog">
+      <button class="modal__close" aria-label="Close canvas modal">&times;</button>
+      <div class="modal__content">
+        <div class="modal__view">
+          <img id="modalImage" src="" alt="Expanded design preview window" />
+        </div>
+        <div class="modal__meta">
+          <h3 id="modalTitle">Project Title</h3>
+          <p id="modalDesc">Detailed spatial parameter summaries, dimensions, and material schedules appear here.</p>
+        </div>
+      </div>
+    </div>
+
+    </main>
+
+    <footer class="footer on-dark">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a class="footer__mark" href="index.html"
+            >Zinnia<span>Interiors</span></a
+          >
+          <p>Residential interior design for deliberate spaces.</p>
+        </div>
+        <div class="footer__grid">
+          <div class="footer__col">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="studio.html">Studio</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="process.html">Process</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="shop.html">Shop</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Inquiries</h4>
+            <ul>
+              <li><a href="contact.html">Start a Project</a></li>
+              <li><p>studio@zinnia.co.ke</p></li>
+              <li><p>Kilimani, Nairobi</p></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2026 Zinnia Interiors. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

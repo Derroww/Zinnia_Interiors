@@ -1,0 +1,25 @@
+{
+  "name": "zinnia_interiors",
+  "version": "1.0.0",
+  "description": "A modern, responsive single-page website for **Zinnia Interiors**, an interior design firm focused on residential interiors, renovation planning, and furnishing services. The website combines architectural-inspired aesthetics with elegant typography and interactive user experience elements.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Derroww/Zinnia_Interiors.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Derroww/Zinnia_Interiors/issues"
+  },
+  "homepage": "https://github.com/Derroww/Zinnia_Interiors#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}

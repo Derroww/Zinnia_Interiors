@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bespoke Shop — Zinnia Interiors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Global Navigation Header -->
+    <header class="nav">
+      <div class="nav__inner">
+        <a class="nav__mark" href="index.html">Zinnia<span>Interiors</span></a>
+
+        <!-- Script automatically mounts dynamic sign in/log out state controls inside this zone -->
+        <div id="navAuthZone" class="nav__auth-zone"></div>
+
+        <input
+          type="checkbox"
+          id="navToggle"
+          class="nav__toggle-checkbox"
+          aria-hidden="true"
+        />
+        <label for="navToggle" class="nav__toggle" aria-label="Toggle menu"
+          ><span></span
+        ></label>
+
+        <ul class="nav__links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="studio.html">Studio</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="shop.html" class="active">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- Sourcing Showroom -->
+      <section id="shop" class="work on-light">
+        <!-- 🌟 RECTIFIED STRUCTURAL LAYOUT HEAD BLOCK -->
+        <div
+          class="work__head"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 100%;
+            gap: 40px;
+            margin-bottom: 60px;
+          "
+        >
+          <!-- LEFT COLUMN: Keeps titles, eyebrows, and subtitle tags locked on the left -->
+          <div class="work__head-titles">
+            <p class="eyebrow">Studio Sourcing</p>
+            <h2
+              style="
+                font-family: var(--font-display);
+                font-size: clamp(1.8rem, 3.4vw, 2.5rem);
+                margin: 0 0 10px 0;
+              "
+            >
+              Bespoke Shop Collection
+            </h2>
+          </div>
+
+          <!-- RIGHT COLUMN: Securely anchors the icon box layout to the absolute right -->
+          <div class="showroom__cart-tray" style="margin-bottom: 6px">
+            <button
+              id="openCartBtn"
+              class="cart-icon-btn"
+              aria-label="Open Cart Ledger"
+            >
+              <svg
+                xmlns="http://w3.org"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="cart-icon-btn__svg"
+              >
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path
+                  d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                ></path>
+              </svg>
+              <span id="cartCount" class="cart-icon-btn__badge">0</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Havenly-Style Product Card Matrix -->
+        <div class="work__grid">
+          <!-- Product Card 01 -->
+          <article
+            class="project product-card"
+            data-id="sh1"
+            data-price="145000"
+            data-title="The Kilimani Low-Slung Sofa"
+          >
+            <div class="project__plate product-card__image-wrapper">
+              <img
+                src="./Images/Kilimani-sofa.jpg"
+                alt="Zinnia Bespoke Minimalist Linen Sofa"
+              />
+              <button class="product-card__quick-view-btn">Quick View</button>
+            </div>
+            <div class="project__body">
+              <p class="project__meta">
+                <span>Custom Furniture</span><span>Solid Ash &amp; Linen</span>
+              </p>
+              <h3>The Kilimani Low-Slung Sofa</h3>
+              <p class="product-card__price">KES 145,000</p>
+              <button
+                class="btn btn--outline add-to-cart-btn"
+                style="width: 100%; margin-top: 12px; font-size: 0.75rem"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <!-- Product Card 02 -->
+          <article
+            class="project product-card"
+            data-id="sh2"
+            data-price="38000"
+            data-title="Linear Brass Pendant"
+          >
+            <div class="project__plate product-card__image-wrapper">
+              <img
+                src="./Images/Linear-pendant.jpg"
+                alt="Bespoke Brass Linear Pendant Light"
+              />
+              <button class="product-card__quick-view-btn">Quick View</button>
+            </div>
+            <div class="project__body">
+              <p class="project__meta">
+                <span>Lighting Overlays</span><span>Brushed Brass</span>
+              </p>
+              <h3>Linear Brass Pendant</h3>
+              <p class="product-card__price">KES 38,000</p>
+              <button
+                class="btn btn--outline add-to-cart-btn"
+                style="width: 100%; margin-top: 12px; font-size: 0.75rem"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <!-- Product Card 03 -->
+          <article
+            class="project product-card"
+            data-id="sh3"
+            data-price="12500"
+            data-title="Delicate Texture Tile"
+          >
+            <div class="project__plate product-card__image-wrapper">
+              <img
+                src="./Images/Delicate-tile.jpg"
+                alt="Delicate Texture Tile design"
+              />
+              <button class="product-card__quick-view-btn">Quick View</button>
+            </div>
+            <div class="project__body">
+              <p class="project__meta">
+                <span>Surfaces Matrix</span><span>Travertine Stone</span>
+              </p>
+              <h3>Delicate Texture Tile</h3>
+              <p class="product-card__price">KES 12,500</p>
+              <button
+                class="btn btn--outline add-to-cart-btn"
+                style="width: 100%; margin-top: 12px; font-size: 0.75rem"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Global Detailed Product & Project Quick-View Modal -->
+    <div id="projectModal" class="modal" aria-hidden="true" role="dialog">
+      <button class="modal__close" aria-label="Close modal">&times;</button>
+      <div class="modal__content">
+        <div class="modal__view">
+          <img id="modalImage" src="" alt="Expanded design preview window" />
+        </div>
+        <div class="modal__meta">
+          <h3 id="modalTitle">Product Title</h3>
+          <p id="modalDesc">
+            Detailed spatial parameter summaries, dimensions, and material
+            schedules appear here.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive E-Commerce Cart Slide-Out Side Drawer -->
+    <div id="cartDrawer" class="cart-drawer-overlay" style="display: none">
+      <div class="cart-drawer-panel">
+        <div class="cart-drawer-header">
+          <h3
+            style="
+              font-family: var(--font-display);
+              font-size: 1.4rem;
+              margin: 0;
+            "
+          >
+            Product List
+          </h3>
+          <button id="closeCartBtn" class="cart-drawer-close">&times;</button>
+        </div>
+
+        <!-- Populated via script.js -->
+        <div id="cartItemsList" class="cart-drawer-items"></div>
+
+        <!-- Dynamic Totals Summary Component Footer -->
+        <div class="cart-drawer-footer">
+          <div class="cart-summary-line">
+            <span>Subtotal</span>
+            <span id="cartSubtotal">KES 0</span>
+          </div>
+          <div
+            class="cart-summary-line"
+            style="
+              font-weight: 600;
+              font-size: 1.1rem;
+              border-top: 1px solid rgba(28, 27, 23, 0.1);
+              padding-top: 12px;
+              margin-top: 12px;
+            "
+          >
+            <span>Total Amount</span>
+            <span id="cartTotal">KES 0</span>
+          </div>
+          <button
+            id="checkoutActionBtn"
+            class="btn btn--fill"
+            style="width: 100%; margin-top: 20px; text-align: center"
+          >
+            Checkout
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer on-dark">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a class="footer__mark" href="index.html"
+            >Zinnia<span>Interiors</span></a
+          >
+          <p>Residential interior design for deliberate spaces.</p>
+        </div>
+        <div class="footer__grid">
+          <div class="footer__col">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="studio.html">Studio</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="process.html">Process</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="shop.html">Shop</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Inquiries</h4>
+            <ul>
+              <li><a href="contact.html">Start a Project</a></li>
+              <li>
+                <p>studio@zinnia.co.ke</p>
+              </li>
+              <li>
+                <p>Kilimani, Nairobi</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2026 Zinnia Interiors. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
